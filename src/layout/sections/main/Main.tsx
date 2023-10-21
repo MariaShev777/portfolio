@@ -23,8 +23,8 @@ export const Main = () => {
 
 
 const StyledMain = styled.div`
-  min-height: 100vh;
-  background-color: #f8c9c9;
+  min-height: 70vh;
+  background-color: #f1bcbc;
 `
 
 
