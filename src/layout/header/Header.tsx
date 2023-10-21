@@ -3,12 +3,13 @@ import {Menu} from "../../components/menu/Menu";
 import {Icon} from "../../components/icon/Icon";
 import styled from "styled-components";
 
+const items = ['Home', 'Skills', 'Projects', 'Contacts'];
 
 export const Header = () => {
     return (
         <StyledHeader>
             <Icon iconId={'logo'} />
-            <Menu/>
+            <Menu menuItems={items}/>
         </StyledHeader>
     );
 };
