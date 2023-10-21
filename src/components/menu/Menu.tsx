@@ -17,13 +17,13 @@ export const Menu = () => {
 
 
 const StyledMenu = styled.nav`
-  background-color: #ec4f4f;
+  background-color: #eae5e5;
 
   ul {
     display: flex;
     gap: 20px;
   }
-  
+
   li {
     list-style: none;
   }
