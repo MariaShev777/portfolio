@@ -97,6 +97,3 @@ const PhotoWrapper = styled.div`
     z-index: -1;
   }
 `
-
-
-
