@@ -51,7 +51,6 @@ const Mask = styled.span`
    display: inline-block;
    height: 50%;
    overflow: hidden;
-   //outline: 1px solid red;
    color: ${theme.colors.accent};
   
   & + & {

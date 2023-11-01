@@ -29,5 +29,5 @@ const StyledHeader = styled.header`
   left: 0;
   right: 0;
   z-index: 999;
-  //box-shadow: 0 0 40px rgba(0, 0, 0, 0.26), 0 0 2px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 30px rgba(252, 252, 194, 0.22);
 `
