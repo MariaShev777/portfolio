@@ -1,34 +1,30 @@
 import styled from "styled-components";
 import {theme} from "../styles/theme";
 
-export const StyledButton = styled.button`
-  font-weight: 400;
+export const Link = styled.a`
   font-size: 14px;
+  font-weight: 400;
   letter-spacing: 1px;
   text-transform: uppercase;
-  width: 170px;
-  height: 32px;
+  padding: 10px;
   position: relative;
   z-index: 0;
   
   &:hover {
     &::before {
-      width: 100%;
-      transition: 1s;
+      height: 10px;
+      border-top: black 4px solid;
     }
   }
   
-  &::before{
+  &::before {
     content: '';
     display: inline-block;
-    height: 10px;
-    width: 50%;
-    background-color: ${theme.colors.accent};
-
     position: absolute;
-    bottom: 0;
-    left: 50%;
+    bottom: 5px;
+    left: 0;
+    right: 0;
+    background-color: ${theme.colors.accent};
     z-index: -1;
-    transform: translateX(-50%);
   }
 `

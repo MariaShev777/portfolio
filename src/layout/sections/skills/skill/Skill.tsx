@@ -50,18 +50,10 @@ const IconWrapper = styled.div`
 `
 
 const SkillTitle = styled.h3`
-  font-family: 'Josefin Sans', sans-serif;
-  font-size: 16px;
-  font-weight: 700;
-  letter-spacing: 1px;
   text-transform: uppercase;
   margin: 70px 0 15px;
 `
 
 const SkillDescription = styled.p`
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1.4;
-
   text-align: center;
 `
