@@ -3,8 +3,7 @@ import styled from "styled-components";
 import {theme} from "../../../styles/theme";
 
 
-
-export const HeaderMenu = (props: {menuItems: string[]}) => {
+export const HeaderMenu = (props: { menuItems: string[] }) => {
     return (
         <StyledHeaderMenu>
             <ul>
@@ -26,7 +25,6 @@ export const HeaderMenu = (props: {menuItems: string[]}) => {
 };
 
 
-
 const StyledHeaderMenu = styled.nav`
 
   ul {
@@ -45,21 +43,22 @@ const Link = styled.a`
 `
 
 const Mask = styled.span`
-   position: absolute;
-   top: 0;
-   left: 0;
-   display: inline-block;
-   height: 50%;
-   overflow: hidden;
-   color: ${theme.colors.accent};
-  
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  height: 50%;
+  overflow: hidden;
+  color: ${theme.colors.accent};
+  transition: .8s;
+
   & + & {
     top: 50%;
+
     span {
       display: inline-block;
       transform: translateY(-50%);
     }
-    
     
   }
 `
@@ -67,6 +66,7 @@ const Mask = styled.span`
 
 const ListItem = styled.li`
   position: relative;
+
 
   &::before {
     content: '';
@@ -79,25 +79,28 @@ const ListItem = styled.li`
     left: -10px;
     right: -10px;
     z-index: 1;
-    
+
     transform: scale(0);
+    transition: .8s;
   }
-  
+
   &:hover {
     &::before {
       transform: scale(1);
+      transition: .5s;
     }
-    
+
     ${Mask} {
       color: ${theme.colors.font};
       transform: skewX(10deg) translateX(3px);
       transition: .5s;
+
       & + ${Mask} {
         transform: skewX(10deg) translateX(-3px);
       }
     }
-    
+
   }
-  
+
 `
 
