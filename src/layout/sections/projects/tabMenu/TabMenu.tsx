@@ -9,7 +9,9 @@ export const TabMenu = (props: {menuItems: string[]}) => {
         <StyledTabMenu>
             <ul>
                 {props.menuItems.map((item, index) => {
-                        return <ListItem key={index}><Link href="">{item}</Link></ListItem>
+                        return <ListItem key={index}>
+                            <Link href="">{item}</Link>
+                        </ListItem>
                     })}
             </ul>
         </StyledTabMenu>
@@ -19,12 +21,14 @@ export const TabMenu = (props: {menuItems: string[]}) => {
 
 
 const StyledTabMenu = styled.nav`
-  margin-bottom: 40px;
-
+  border: 1px solid green;
   ul {
     display: flex;
-    gap: 20px;
-    justify-content: center;
+    justify-content: space-between;
+    max-width: 352px;
+    width: 100%;
+    border: 1px solid red;
+    margin: 0 auto 40px;
   }
 
 `
