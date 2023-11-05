@@ -11,9 +11,9 @@ export const Link = styled.a`
   z-index: 0;
   
   &:hover {
+    
     &::before {
-      height: 10px;
-      border-top: black 4px solid;
+      height: 9px;
     }
   }
   
