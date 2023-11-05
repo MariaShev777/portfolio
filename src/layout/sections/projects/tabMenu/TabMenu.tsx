@@ -21,7 +21,6 @@ export const TabMenu = (props: {menuItems: string[]}) => {
 
 
 const StyledTabMenu = styled.nav`
-  border: 1px solid green;
   ul {
     display: flex;
     justify-content: space-between;
