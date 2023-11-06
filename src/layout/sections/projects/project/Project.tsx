@@ -5,16 +5,16 @@ import {theme} from "../../../../styles/theme";
 import {StyledButton} from "../../../../components/Button";
 
 type ProjectPropsType = {
-    picture: string
+    src: string
     title: string
     description: string
 }
 
-export const Project = (props: ProjectPropsType) => {
+export const Project:React.FC<ProjectPropsType>= (props: ProjectPropsType) => {
     return (
         <StyledProject>
             <ImageWrapper>
-                <Image src={props.picture} alt=""/>
+                <Image src={props.src} alt=""/>
                 <StyledButton>View Project</StyledButton>
             </ImageWrapper>
 
@@ -51,7 +51,7 @@ const StyledProject = styled.div`
 const ImageWrapper = styled.div`
   position: relative;
 
-  &::before {
+  &::before { 
     content: '';
     position: absolute;
     left: 0;

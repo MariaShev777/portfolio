@@ -11,19 +11,42 @@ import {Container} from "../../../components/Container";
 
 const worksKeyWords = ["All", "Landing Page", "React", "Spa"];
 
-export const Projects = () => {
+
+const projectsData = [
+    {
+        title: "Social Network",
+        src: pic2,
+        description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+    },
+    {
+        title: "Task Manager",
+        src: pic1,
+        description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+    },
+    {
+        title: "Counter",
+        src: pic3,
+        description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+    },
+]
+
+
+export const Projects:React.FC = () => {
     return (
         <StyledProjects>
             <Container>
                 <SectionTitle>Projects</SectionTitle>
                 <TabMenu menuItems={worksKeyWords}/>
-                <FlexWrapper justify={"space-between"} align={'flex-start'} wrap={'wrap'}>
-                    <Project picture={pic2} title={"Social Network"}
-                             description={"Lorem ipsum dolor sit amet, consectetur adipisicing elit."}/>
-                    <Project picture={pic1} title={"Task Manager"}
-                             description={"Lorem ipsum dolor sit amet, consectetur adipisicing elit."}/>
-                    <Project picture={pic3} title={"Counter"}
-                             description={"Lorem ipsum dolor sit amet, consectetur adipisicing elit."}/>
+                <FlexWrapper justify={"space-between"} align={"flex-start"} wrap={"wrap"}>
+
+                    {projectsData.map((project, index) => {
+                        return <Project
+                            key={index}
+                            title={project.title}
+                            src={project.src}
+                            description={project.description}/>
+                    })}
+
                 </FlexWrapper>
             </Container>
         </StyledProjects>
@@ -32,7 +55,7 @@ export const Projects = () => {
 
 
 const StyledProjects = styled.section`
-    ${FlexWrapper} {
-      gap: 30px;
-    }
+  ${FlexWrapper} {
+    gap: 30px;
+  }
 `
