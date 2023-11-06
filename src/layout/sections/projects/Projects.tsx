@@ -1,5 +1,4 @@
 import React from "react";
-import styled from "styled-components";
 import {SectionTitle} from "../../../components/SectionTitle";
 import {TabMenu} from "./tabMenu/TabMenu";
 import {FlexWrapper} from "../../../components/FlexWrapper";
@@ -8,6 +7,7 @@ import pic1 from "../../../assets/images/photo_1.jpg";
 import pic2 from "../../../assets/images/13.jpg";
 import pic3 from "../../../assets/images/110726349.jpg";
 import {Container} from "../../../components/Container";
+import {S} from './Projects_Styles';
 
 const worksKeyWords = ["All", "Landing Page", "React", "Spa"];
 
@@ -33,7 +33,7 @@ const projectsData = [
 
 export const Projects:React.FC = () => {
     return (
-        <StyledProjects>
+        <S.Projects>
             <Container>
                 <SectionTitle>Projects</SectionTitle>
                 <TabMenu menuItems={worksKeyWords}/>
@@ -49,13 +49,6 @@ export const Projects:React.FC = () => {
 
                 </FlexWrapper>
             </Container>
-        </StyledProjects>
+        </S.Projects>
     );
 };
-
-
-const StyledProjects = styled.section`
-  ${FlexWrapper} {
-    gap: 30px;
-  }
-`
