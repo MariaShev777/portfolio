@@ -1,5 +1,4 @@
 import React, {useEffect, useState} from "react";
-import {Icon} from "../../components/icon/Icon";
 import {Container} from "../../components/Container";
 import {FlexWrapper} from "../../components/FlexWrapper";
 import {DesktopMenu} from "./headerMenu/desktopMenu/DesktopMenu";
@@ -7,7 +6,7 @@ import {MobileMenu} from "./headerMenu/mobileMenu/MobileMenu";
 import {S} from "./Header_Styles";
 import {Logo} from "../../components/logo/Logo";
 
-const items = ["Home", "Skills", "Projects", "Contacts"];
+
 
 export const Header: React.FC = () => {
 
@@ -29,8 +28,8 @@ export const Header: React.FC = () => {
                     <Logo />
 
                     {width < breakpoint
-                        ? <MobileMenu menuItems={items}/>
-                        : <DesktopMenu menuItems={items}/>
+                        ? <MobileMenu />
+                        : <DesktopMenu />
                     }
 
                 </FlexWrapper>

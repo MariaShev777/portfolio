@@ -33,6 +33,8 @@ const SocialLink = styled.a`
   transition: 0.3s ;
   
   color: ${theme.colors.accent};
+
+
   &:hover {
     color: ${theme.colors.primaryBg};
     transform: translateY(-4px) ;

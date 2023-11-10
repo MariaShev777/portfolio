@@ -22,7 +22,8 @@ const Project = styled.div`
       margin-left: 20px;
     }
   }
-
+  z-index: 0;
+  
   @media ${theme.media.desktop} {
     max-width: 540px;
   }
@@ -50,6 +51,7 @@ const ImageWrapper = styled.div`
     top: 50%;
     transform: translate(-50%, -50%);
     color: ${theme.colors.secondaryBg};
+    
 
     &::before {
       width: 100%;
