@@ -61,11 +61,11 @@ const MenuItem = styled.li`
 
     ${Mask} {
       color: ${theme.colors.font};
-      transform: skewX(10deg) translateX(3px);
+      transform: skewX(8deg) translateX(1px);
       transition: .5s;
 
       & + ${Mask} {
-        transform: skewX(10deg) translateX(-3px);
+        transform: skewX(8deg) translateX(-1px);
       }
     }
 

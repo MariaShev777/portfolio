@@ -18,7 +18,11 @@ const Greeting = styled.h2`
 `
 
 const MainTitle = styled.h1`
-  ${font({weight: 400, fontMax: 27, fontMin: 20})}
+  ${font({weight: 400, fontMax: 27, fontMin: 20})};
+  
+  p {
+    display: none;
+  }
 `
 
 const Name = styled.h2`
