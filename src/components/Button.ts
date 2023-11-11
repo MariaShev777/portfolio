@@ -14,7 +14,6 @@ export const StyledButton = styled.button`
   &:hover {
     &::before {
       width: 100%;
-      transition: 1s;
     }
   }
   
@@ -30,5 +29,6 @@ export const StyledButton = styled.button`
     left: 50%;
     z-index: -1;
     transform: translateX(-50%);
+    transition: ${theme.animations.transition};
   }
 `
