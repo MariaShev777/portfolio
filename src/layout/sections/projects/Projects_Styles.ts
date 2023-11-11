@@ -99,6 +99,7 @@ const Title = styled.h3`
 
 const Description = styled.p`
   margin: 14px 0 10px;
+  letter-spacing: .2px;
 `
 
 export const S = {

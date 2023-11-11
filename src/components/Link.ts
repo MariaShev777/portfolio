@@ -1,7 +1,9 @@
 import styled from "styled-components";
 import {theme} from "../styles/theme";
 
-export const Link = styled.a`
+export const Link = styled.a.attrs(() => ({
+    target: '_blank'
+}))`
   font-size: 14px;
   font-weight: 400;
   letter-spacing: 1px;

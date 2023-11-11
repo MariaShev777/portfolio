@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from "react";
-import styled from "styled-components";
+import styled, {keyframes} from "styled-components";
 import {Icon} from "../icon/Icon";
 import {animateScroll as scroll} from "react-scroll/modules";
 
@@ -23,6 +23,11 @@ export const GoTopBtn = () => {
     )
 };
 
+const Bouncing = keyframes`
+  50% {
+    transform: translateY(20%);
+  }
+`
 
 const StyledGoTopBtn = styled.button`
   padding: 8px 8px 7px;
@@ -30,4 +35,13 @@ const StyledGoTopBtn = styled.button`
   position: fixed;
   right: 30px;
   bottom: 30px;
+  animation: ${Bouncing} 2s linear infinite alternate;
+  //transition: 0.6s;
+  
+ 
+  
+  &:hover {
+    transform: scale(1.4);
+  }
 `
+

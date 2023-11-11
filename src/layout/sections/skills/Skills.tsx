@@ -5,6 +5,7 @@ import {SectionTitle} from "../../../components/SectionTitle";
 import {Skill} from "./skill/Skill";
 import {S} from "./Skills_Styles";
 
+
 const skillsData = [
     {
         iconId: "logo",
@@ -41,17 +42,17 @@ const skillsData = [
 
 export const Skills = () => {
     return (
-        <S.Skills id='skills'>
+        <S.Skills id="skills">
             <Container>
                 <SectionTitle>Skills</SectionTitle>
                 <FlexWrapper wrap={"wrap"} justify={"space-between"}>
 
-                    {skillsData.map((skill, index) => {
-                        return <Skill key={index}
-                                      iconId={skill.iconId}
-                                      title={skill.title}
-                                      description={skill.description}/>
-                    })}
+                        {skillsData.map((skill, index) => {
+                            return <Skill key={index}
+                                          iconId={skill.iconId}
+                                          title={skill.title}
+                                          description={skill.description}/>
+                        })}
 
                 </FlexWrapper>
             </Container>

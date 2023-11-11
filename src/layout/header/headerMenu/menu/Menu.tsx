@@ -28,9 +28,8 @@ export const Menu: React.FC = () => {
                     <S.NavLink
                         to={item.id}
                         smooth={true}
-                        activeClass='active'
-                        spy={true}
-                        offset={-10}
+                        offset={-16}
+
                     >
                         {item.title}
                         <S.Mask>

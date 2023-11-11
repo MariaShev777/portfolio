@@ -3,30 +3,43 @@ import {SectionTitle} from "../../../components/SectionTitle";
 import {TabMenu} from "./tabMenu/TabMenu";
 import {FlexWrapper} from "../../../components/FlexWrapper";
 import {Project} from "./project/Project";
-import pic1 from "../../../assets/images/photo_1.jpg";
-import pic2 from "../../../assets/images/13.jpg";
-import pic3 from "../../../assets/images/110726349.jpg";
+import cccounter from '../../../assets/images/cccounter.png';
+import task from '../../../assets/images/task.webp';
+import social from '../../../assets/images/social.webp';
 import {Container} from "../../../components/Container";
 import {S} from './Projects_Styles';
 
+
 const worksKeyWords = ["All", "Landing Page", "React", "Spa"];
 
-
-const projectsData = [
+export type ProjectType = {
+    title: string
+    src: string
+    description: string
+    href: string
+    link: string
+}
+const projectsData: ProjectType[] = [
     {
         title: "Social Network",
-        src: pic2,
-        description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+        src: social,
+        description: "An online platform to build social networks and relationships with people",
+        href: 'https://github.com/MariaShev777/samurai-way-main',
+        link: 'https://mariashev777.github.io/samurai-way-main/'
     },
     {
         title: "Task Manager",
-        src: pic1,
-        description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+        src: task,
+        description: "A tool that helps you organize and manage your tasks",
+        href: 'https://github.com/MariaShev777/my-todolist',
+        link: 'https://mariashev777.github.io/login'
     },
     {
         title: "Counter",
-        src: pic3,
-        description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+        src: cccounter,
+        description: "A free simple app designed for keeping the count value",
+        href: 'https://github.com/MariaShev777/counter-with-redux',
+        link: 'https://mariashev777.github.io/counter-with-redux/'
     },
 ]
 
@@ -42,9 +55,7 @@ export const Projects:React.FC = () => {
                     {projectsData.map((project, index) => {
                         return <Project
                             key={index}
-                            title={project.title}
-                            src={project.src}
-                            description={project.description}/>
+                            project={project}/>
                     })}
 
                 </FlexWrapper>
