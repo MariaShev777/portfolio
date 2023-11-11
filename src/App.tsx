@@ -7,6 +7,7 @@ import {Projects} from "./layout/sections/projects/Projects";
 import {Contacts} from "./layout/sections/contacts/Contacts";
 import {Footer} from "./layout/footer/Footer";
 import {Particle} from "./components/particle/Particle";
+import {GoTopBtn} from "./components/goTopBtn/GoTopBtn";
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
           <Projects/>
           <Contacts/>
           <Footer />
+          <GoTopBtn/>
       </div>
   );
 }
