@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, {keyframes} from "styled-components";
 import {theme} from "../../../styles/theme";
 
 
@@ -43,8 +43,35 @@ const Field = styled.input`
   }
 `
 
+
+const Alert = styled.div`
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 150px;
+  animation-delay: 2s;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  background-color: ${theme.colors.primaryBg};
+  opacity: .8;
+
+  p {
+    //line-height: 150px;
+    text-align: center;
+    font-size: 22px;
+    padding-top: 20px;
+  }
+
+  
+`
+
+
+
+
 export const S = {
     Contacts,
     Form,
-    Field
+    Field,
+    Alert
 }

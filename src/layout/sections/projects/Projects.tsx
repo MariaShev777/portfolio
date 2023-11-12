@@ -4,10 +4,10 @@ import {TabMenu} from "./tabMenu/TabMenu";
 import {FlexWrapper} from "../../../components/FlexWrapper";
 import {Project} from "./project/Project";
 import cccounter from '../../../assets/images/cccounter.png';
-import task from '../../../assets/images/task.webp';
-import social from '../../../assets/images/social.webp';
+import social2 from '../../../assets/images/social2.png';
 import {Container} from "../../../components/Container";
 import {S} from './Projects_Styles';
+import todo2 from '../../../assets/images/todo2.png';
 
 
 const worksKeyWords = ["All", "Landing Page", "React", "Spa"];
@@ -22,14 +22,14 @@ export type ProjectType = {
 const projectsData: ProjectType[] = [
     {
         title: "Social Network",
-        src: social,
+        src: social2,
         description: "An online platform to build social networks and relationships with people",
         href: 'https://github.com/MariaShev777/samurai-way-main',
         link: 'https://mariashev777.github.io/samurai-way-main/'
     },
     {
         title: "Task Manager",
-        src: task,
+        src: todo2,
         description: "A tool that helps you organize and manage your tasks",
         href: 'https://github.com/MariaShev777/my-todolist',
         link: 'https://mariashev777.github.io/login'
